@@ -1,0 +1,37 @@
+//
+//  PrefixHeader.pch
+//  EBankOC
+//
+//  Created by 羊羊 on 16/12/1.
+//  Copyright © 2016年 Bruce. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <libkitEx/libkitEx.h>
+#import "AFNetworking.h"
+#import "IQKeyboardManager.h"
+#import "AppDelegate.h"
+#import "UIToolkit.h"
+#import "EBNavigationController.h"
+#import "UITextField+Validate.h"
+//项目级全局常量定义
+#import "EBConstantDefind.h"
+#import "EBUserDefaults.h"
+////接口头文件
+#import "RemoteInterfaceURL.h"
+#define SCREENW  [[UIScreen mainScreen] bounds].size.width
+#define SCREENH  [[UIScreen mainScreen] bounds].size.height
+#define EBNormalFont [UIFont systemFontOfSize:15]
+// 原创微博时间字体
+#define EBSmallFont [UIFont systemFontOfSize:13]
+// 原创微博正文字体
+#define EBLargeFont [UIFont systemFontOfSize:17]
+#define   httpPrefix            @"http://"
+///远程接口调用
+#import "RemoteRequest.h"
+#endif /* PrefixHeader_pch */
